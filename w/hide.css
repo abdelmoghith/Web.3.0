@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Commissioner", sans-serif;
+}
+.container {
+  padding: 50px 125px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background-image: url(images/logo.svg);
+  background-size: contain;
+  width: 100px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.links ul {
+  list-style: none;
+  display: flex;
+}
+.links ul li {
+  margin: 0px 15px;
+  text-transform: capitalize;
+}
+
+.bar {
+  display: none;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 500px;
+  gap: 30px;
+  margin-top: 40px;
+}
+.left {
+  grid-column: span 2;
+  grid-template-rows: repeat(2, 1fr);
+}
+.top {
+  background-image: url(images/image-web-3-desktop.jpg);
+  background-size: cover;
+  height: 50%;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 50%;
+}
+
+.title {
+  padding: 20px;
+  font-size: 25px;
+}
+.description {
+  padding: 25px;
+}
+.description p {
+  padding: 5px;
+  color: hsl(236, 13%, 42%);
+}
+button {
+  background-color: hsl(5, 85%, 63%);
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.right {
+  background-color: black;
+  color: white;
+  padding: 25px 20px;
+}
+.right h1 {
+  color: hsl(35, 77%, 62%);
+}
+.right div {
+  margin: 15px auto;
+  padding: 20px 0px;
+}
+.right div p {
+  color: hsla(36, 100%, 99%, 0.603);
+  margin-top: 5px;
+}
+.right div:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.cards > div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 140px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+#img_1 {
+  background-image: url(images/image-retro-pcs.jpg);
+}
+#img_2 {
+  background-image: url(images/image-top-laptops.jpg);
+}
+#img_3 {
+  background-image: url(images/image-gaming-growth.jpg);
+}
+
+span {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .bar {
+    display: block;
+  }
+  .head {
+    padding: 30px;
+  }
+  .links ul li {
+    display: none;
+  }
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    gap: 00px;
+    margin-top: 20px;
+  }
+  .container {
+    padding: 0px;
+  }
+  .left {
+    grid-column: span 2;
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .top {
+    background-image: url(images/image-web-3-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 70%;
+  }
+  .right {
+    background-color: black;
+    color: white;
+    padding: 5px;
+  }
+  .right div {
+    margin: 20px 5px;
+    padding: 30px 0px;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .right h1 {
+    text-align: center;
+  }
+  .cards > div {
+    margin: 25px 10px;
+  }
+}
+
+/* @media (max-width: 325px) {
+}  */
